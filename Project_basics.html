@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organic Honey🍯</title>
+    <style>
+      section {
+        margin: 120px;
+      }
+      h1 {
+        text-align: center;
+        color: #272144;
+        border: 1px solid #272144;
+        padding: 15px;
+        font-size: 50px;
+        border-radius: 4px;
+        letter-spacing: 1rem;
+      }
+      h2 {
+        text-align: center;
+        color: #272144;
+      }
+
+      img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        border-radius: 2px;
+        padding: 15px 20px;
+      }
+
+      p {
+        display: block;
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 0 0 20px;
+        color: #272144;
+      }
+
+      .button {
+        display: block;
+        margin: 20px auto;
+        background: #4a407a;
+        color: aliceblue;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      .button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        color: #272144;
+        background: #fff;
+      }
+      .container {
+        width: 50%;
+        margin: 30px auto;
+        padding: 30px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: circle at 10% 20%, #fff6ec 39.5%,
+          rgba(100, 46, 122, 0.23) 100.2%;
+        background-image: radial-gradient(
+          circle at 10% 20%,
+          #fff6ec 39.5%,
+          rgba(100, 46, 122, 0.23) 100.2%
+        );
+      }
+      .about {
+        display: block;
+        margin-top: 10px;
+        text-decoration: underline;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .read-more :hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I LOVE HONEY</h1>
+      <h2>Especially Organic Honey</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/100/original/honey.png?1695553880"
+        alt="Honey_pot"
+        width="400" />
+      <hr />
+      <p>
+        <strong>Honey</strong>
+        <em
+          >is a natural source of carbohydrates, providing 17 grams per
+          tablespoon, which makes it ideal for your working muscles. Since
+          carbohydrates are the primary fuel the body uses, honey can help
+          maintain muscle glycogen, also known as stored carbohydrates, which
+          gives athletes the boost they need when they need it most.</em
+        >
+        <br />
+      </p>
+      <a
+        href="https://honey.com/about-honey/honey-benefits"
+        target="_blank"
+        class="about"
+        >More about honey
+      </a>
+      <button class="button">👉🏽Buy Organic Honey</button>
+      <p class="footer">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/101/original/Jadean_August.JPG?1695553901"
+          alt="Jadean August"
+          width="100" />
+        <em>This page was built by Jadean August</em>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite emoji?");
+        alert(
+          "Thank you " +
+            name +
+            "! We'll be in touch by email, meanwhile have some honey! " +
+            emoji
+        );
+      }
+      let buyButton = document.querySelector(".button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
